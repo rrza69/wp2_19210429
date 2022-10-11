@@ -27,6 +27,15 @@ method="post">
 					</td>
 				</tr>
 				<tr>
+					<th></th>
+					 <th></th>
+				     <td>
+					     <font style="color:red; font-size:8;
+						 align: center;"><?= form_error('kode');
+						 ?></font>
+				     </td>
+				 </tr>
+ 				 <tr>
 					<th>Nama MTK</th>
 					<td>:</td>
 					<td>
@@ -34,18 +43,36 @@ method="post">
 					</td>
 				</tr>
 				<tr>
+					<th></th>
+					 <th></th>
+				     <td>
+					     <font style="color:red; font-size:8;
+						 align: center;"><?= form_error('nama');
+						 ?></font>
+				     </td>
+				 </tr>
+ 				 <tr>
 					<th>SKS</th>
 					<td>:</td>
 					<td>
 						<select name="sks" id="sks">
-							<option value="">Pilih SKS</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
+							<option value=""<?=set_select('sks','',TRUE); ?>>Pilih SKS</option>
+							<option value="2"<?=set_select('sks','2'); ?>>2</option>
+							<option value="3"<?=set_select('sks','3'); ?>>3</option>
+							<option value="4"<?=set_select('sks','4'); ?>>4</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
+					<th></th>
+					 <th></th>
+				     <td>
+					     <font style="color:red; font-size:8;
+						 align: center;"><?= form_error('sks');
+						 ?></font>
+				   </td>
+               </tr>
+               <tr>
 					<td colspan="3" align="center">
 						<input type="submit" value="Submit">
 					</td>
